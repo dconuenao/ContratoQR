@@ -3,45 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FamilyCard - Políticas de Crédito</title>
+    <title>Borrador de Contrato - Family Card</title>
     <style>
-        body { font-family: sans-serif; margin: 0; background-color: #1a1a1a; color: white; display: flex; flex-direction: column; align-items: center; }
-        header { width: 100%; background-color: #0d2142; padding: 15px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; border-bottom: 2px solid #2a3b58; }
-        .branding { display: flex; align-items: center; }
-        .logo-placeholder { width: 40px; height: 40px; background: #eee; color: #333; display: flex; align-items: center; justify-content: center; font-weight: bold; border-radius: 4px; margin-right: 10px; }
-        .info h1 { font-size: 14px; margin: 0; }
-        .info p { font-size: 11px; margin: 0; opacity: 0.8; }
-        .vigencia { font-size: 10px; text-align: right; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f0f2f5; color: #333; display: flex; flex-direction: column; align-items: center; }
         
-        .pdf-container { width: 90%; max-width: 500px; height: 60vh; margin-top: 20px; background: white; border-radius: 8px; overflow: hidden; }
+        header { width: 100%; background-color: white; padding: 20px 0; text-align: center; border-bottom: 3px solid #004a99; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .header-logo { max-width: 280px; height: auto; }
+        
+        .info { margin-top: 15px; text-align: center; }
+        .info h1 { font-size: 18px; margin: 0; color: #004a99; text-transform: uppercase; }
+        
+        .pdf-container { width: 95%; max-width: 900px; height: 75vh; margin-top: 20px; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
         iframe { width: 100%; height: 100%; border: none; }
         
-        .btn-descarga { margin-top: 20px; width: 90%; max-width: 500px; background-color: #1d3557; color: white; text-align: center; padding: 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        footer { margin-top: 20px; font-size: 10px; opacity: 0.5; text-align: center; padding-bottom: 20px; }
+        .btn-descarga { margin: 25px 0; display: inline-block; background-color: #004a99; color: white; text-align: center; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold; transition: transform 0.2s; }
+        .btn-descarga:hover { transform: scale(1.05); background-color: #003366; }
+        
+        footer { font-size: 11px; color: #999; text-align: center; padding-bottom: 30px; line-height: 1.5; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="branding">
-        <div class="logo-placeholder">FC</div>
-        <div class="info">
-            <h1>FamilyCard</h1>
-            <p>Políticas de Crédito</p>
-        </div>
+    <img src="Azul-Ftransp-2-1024x279.png" alt="Family Card Logo" class="header-logo">
+    <div class="info">
+        <h1>Borrador de Contrato</h1>
     </div>
-    <div class="vigencia">Vigente desde<br>abr 2025</div>
 </header>
 
 <div class="pdf-container">
-    <iframe src="politicas.pdf#toolbar=0" type="application/pdf"></iframe>
+    <iframe src="BorradorContrato.pdf" type="application/pdf"></iframe>
 </div>
 
-<a href="politicas.pdf" download class="btn-descarga">⬇ Descargar PDF</a>
+<a href="BorradorContrato.pdf" download class="btn-descarga">💾 DESCARGAR BORRADOR (PDF)</a>
 
 <footer>
-    familycard.github.io/politicas<br>
-    © FamilyCard Chile
+    Documento de consulta oficial<br>
+    © 2026 Family Card Chile
 </footer>
 
 </body>
